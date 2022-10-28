@@ -12,17 +12,17 @@ const ElencoComponent = () => {
         {name: "Nonmorti", id: 6},
         {name: "Skaven", id: 7},
     ];
-
+    
     return (
         <View>
             <Text style={styles.stileTesto}>Bande</Text>
-            <FlatList>
+            <FlatList
                 data={elencoBande}
                 showsVerticalScrollIndicator={false}
                 renderItem={({item}) => <Text>{item.name}</Text>}
                 keyExtractor={(item, key) => item.id}
-            </FlatList>
-            <Text>fine</Text>
+            />
+            <Text>qui sopra dovrebbe esserci la lista...</Text>
         </View>
     )
 };

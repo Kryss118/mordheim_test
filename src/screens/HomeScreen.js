@@ -4,6 +4,10 @@ import SearchInput from '../components/SearchInput';
 import ElencoComponent from '../components/ElencoComponent';
 
 const HomeScreen = () => {
+
+    const [banda, setBanda] = useState('')
+    const [punti, setPunti] = useState(0)
+
     return (
       <View style={styles.containerStyle}>
             <View>
