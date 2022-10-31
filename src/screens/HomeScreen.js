@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import SearchInput from '../components/SearchInput';
 import ElencoComponent from '../components/ElencoComponent';
