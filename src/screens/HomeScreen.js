@@ -1,21 +1,12 @@
-import React, { FC, useState } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import SearchInput from '../components/SearchInput';
-import ElencoComponent from '../components/ElencoComponent';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
 const HomeScreen = () => {
-
-    const [banda, setBanda] = useState('')
-    const [punti, setPunti] = useState(0)
 
     return (
       <View style={styles.containerStyle}>
             <View>
-                  <Text style={styles.titoloStyle}>Mordheim Gang Creator</Text>
-            </View>
-            <View>
-                  <SearchInput />
-                  <ElencoComponent />
+                  <Text style={styles.titoloStyle}>Rotolator d'Iniziativa</Text>
             </View>
       </View>
     )
@@ -30,7 +21,7 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       textAlign: 'center',
       margin: 16
-    }
+    },
 });
 
 export default HomeScreen;
